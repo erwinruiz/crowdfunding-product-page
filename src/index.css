@@ -15,4 +15,7 @@
 
 body {
   font-size: 16px;
+  background-image: url("./images/image-hero-mobile.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
