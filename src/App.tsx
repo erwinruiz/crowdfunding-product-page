@@ -1,8 +1,17 @@
-import Header from './Components/Header';
+import { Fragment } from "react";
+import classes from "./App.module.css";
+// Components
+import Header from "./Components/Header";
+import Intro from "./Components/Intro";
 
 function App() {
   return (
-    <Header />
+    <Fragment>
+      <Header />
+      <section className={classes.section}>
+        <Intro />
+      </section>
+    </Fragment>
   );
 }
 
