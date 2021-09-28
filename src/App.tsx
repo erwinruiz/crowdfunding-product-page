@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import classes from "./App.module.css";
+import About from "./Components/About/About";
 // Components
 import Header from "./Components/Header";
 import Intro from "./Components/Intro";
@@ -12,6 +13,7 @@ function App() {
       <section className={classes.section}>
         <Intro />
         <Stats />
+        <About />
       </section>
     </Fragment>
   );

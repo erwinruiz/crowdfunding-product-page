@@ -1,0 +1,16 @@
+.article {
+  background-color: #fff;
+  border: 1px #eee solid;
+  border-radius: 12px;
+  padding: 30px 20px;
+}
+.article h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+.article p {
+  color: #999;
+  line-height: 1.7;
+  font-size: 14.7px;
+  margin-bottom: 20px;
+}
