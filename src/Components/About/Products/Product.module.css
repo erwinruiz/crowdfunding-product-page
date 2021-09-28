@@ -1,0 +1,55 @@
+.article {
+  background-color: #fff;
+  border: 1px #eee solid;
+  border-radius: 12px;
+  padding: 30px 20px;
+}
+.productOutOfStock {
+  opacity: 0.4;
+}
+.article h3 {
+  margin-bottom: 10px;
+}
+.article h4 {
+  color: var(--Moderate-cyan);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.article p {
+  font-size: 15.1px;
+  line-height: 1.7;
+}
+.article .unitsLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.article .unitsLeft p:first-of-type {
+  color: var(--Black);
+  font-size: 34px;
+  font-weight: 700;
+}
+.article .unitsLeft p:last-of-type {
+  color: #999;
+  font-size: 18px;
+  font-weight: 400;
+}
+.article button {
+  background-color: var(--Moderate-cyan);
+  font-family: "Commissioner";
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  padding: 20px 38px;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+}
+.article button:hover:not(.productOutOfStockBtn) {
+  background-color: var(--Dark-cyan);
+}
+.article .productOutOfStockBtn {
+  background-color: var(--Dark-gray);
+  cursor: initial;
+}

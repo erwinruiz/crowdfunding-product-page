@@ -1,4 +1,6 @@
 import classes from "./About.module.css";
+import Product from "./Products/Product";
+import { products } from "../../db";
 
 function About() {
   return (
@@ -16,6 +18,17 @@ function About() {
         desk space below your computer to allow notepads, pens, and USB sticks
         to be stored under the stand.
       </p>
+      <div className={classes.products}>
+        {products.map((product) => (
+          <Product
+            key={product.id}
+            title={product.title}
+            pledge={product.pledge}
+            text={product.text}
+            units={product.units}
+          />
+        ))}
+      </div>
     </article>
   );
 }
