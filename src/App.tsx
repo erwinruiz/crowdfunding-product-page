@@ -3,6 +3,7 @@ import classes from "./App.module.css";
 // Components
 import Header from "./Components/Header";
 import Intro from "./Components/Intro";
+import Stats from "./Components/Stats";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <section className={classes.section}>
         <Intro />
+        <Stats />
       </section>
     </Fragment>
   );

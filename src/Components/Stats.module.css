@@ -1,0 +1,41 @@
+.article {
+  background-color: #fff;
+  border: 1px #eee solid;
+  border-radius: 12px;
+  text-align: center;
+  padding: 30px 20px;
+}
+.article p {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.article p:last-of-type {
+  margin-bottom: 40px;
+}
+.article p span {
+  font-size: 13px;
+  font-weight: 400;
+  color: #999;
+  display: block;
+  margin-top: 10px;
+}
+.article .separatorLine {
+  border-bottom: 1px solid #ddd;
+  width: 80px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.article .progressBar {
+  height: 12px;
+  background-color: rgba(238, 238, 238, 0.7);
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.article .progressBar .actualProgress {
+  height: 100%;
+  width: 80%;
+  background-color: var(--Moderate-cyan);
+  border-radius: 10px;
+}
