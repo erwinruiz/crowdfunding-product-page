@@ -9,6 +9,9 @@
 @media (min-width: 768px) {
   .section {
     padding: 0 43px;
-    max-width: 768px;
+    max-width: 682px;
+    margin: 0 auto;
   }
 }
+
+

@@ -21,3 +21,10 @@ body {
   background-repeat: no-repeat;
   padding-bottom: 90px;
 }
+
+/* Ipad */
+@media (min-width: 768px) {
+  body {
+    background-image: url("./images/image-hero-desktop.jpg");
+  }
+}
