@@ -1,6 +1,6 @@
 .article {
   background-color: #fff;
-  border: 1px #eee solid;
+  border: 1px #ddd solid;
   border-radius: 12px;
   padding: 30px 20px;
 }
@@ -17,8 +17,10 @@
   margin-bottom: 30px;
 }
 .article p {
+  color: #999;
   font-size: 15.1px;
   line-height: 1.7;
+  margin-bottom: 20px;
 }
 .article .unitsLeft {
   display: flex;
@@ -54,6 +56,7 @@
   cursor: initial;
 }
 
+/* Iphone XS Max */
 @media (min-width: 414px) {
   .article {
     padding: 30px 26px;
@@ -66,5 +69,35 @@
   }
   .article p {
     font-size: 16px;
+  }
+}
+
+/* Ipad */
+@media (min-width: 768px) {
+  .article {
+    padding: 35px 26px;
+  }
+  .article .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .article .header h3 {
+    margin-bottom: 0;
+  }
+  .article .header h4 {
+    margin-bottom: 0;
+  }
+  .article p:first-of-type {
+    margin-bottom: 30px;
+  }
+  .article .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .article .footer p {
+    margin-bottom: 0;
   }
 }

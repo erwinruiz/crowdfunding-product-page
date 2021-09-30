@@ -13,6 +13,13 @@ function Header() {
         src="./images/icon-hamburger.svg"
         alt="hamburger icon"
       />
+      <nav className={classes.navMenu}>
+        <ul>
+          <li>About</li>
+          <li>Discover</li>
+          <li>Get Started</li>
+        </ul>
+      </nav>
     </header>
   );
 }

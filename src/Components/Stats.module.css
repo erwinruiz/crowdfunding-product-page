@@ -40,6 +40,7 @@
   border-radius: 10px;
 }
 
+/* Iphone XS Max */
 @media (min-width: 414px) {
   .article {
     padding: 30px 26px;
@@ -49,5 +50,22 @@
   }
   .article p span {
     font-size: 16px;
+  }
+}
+
+/* Ipad */
+@media (min-width: 768px) {
+  .article {
+    padding: 40px 35px;
+  }
+  .stats {
+    display: flex;
+    column-gap: 50px;
+  }
+  .article .separatorLine {
+    border-right: 1px solid #ddd;
+    height: 50px;
+    width: 0;
+    margin: 0;
   }
 }

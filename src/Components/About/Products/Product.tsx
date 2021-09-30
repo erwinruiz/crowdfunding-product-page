@@ -8,9 +8,12 @@ function Product(props: product) {
 
   return (
     <article className={articleClasses}>
-      <h3>{props.title}</h3>
-      <h4>Pledge ${props.pledge} or more</h4>
+      <div className={classes.header}>
+        <h3>{props.title}</h3>
+        <h4>Pledge ${props.pledge} or more</h4>
+      </div>
       <p>{props.text}</p>
+      <div className={classes.footer}>
       <div className={classes.unitsLeft}>
         <p>{props.units}</p>
         <p>left</p>
@@ -20,6 +23,7 @@ function Product(props: product) {
       >
         {props.units > 0 ? "Select Reward" : "Out of Stock"}
       </button>
+      </div>
     </article>
   );
 }

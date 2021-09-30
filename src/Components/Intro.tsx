@@ -15,7 +15,10 @@ function Intro() {
         </p>
         <div className={classes.actions}>
           <button>Back this project</button>
-          <img src="./images/icon-bookmark.svg" alt="bookmark icon" />
+          <div className={classes.bookmark}>
+            <img src="./images/icon-bookmark.svg" alt="bookmark icon" />
+            <p>Bookmark</p>
+          </div>
         </div>
       </div>
     </article>

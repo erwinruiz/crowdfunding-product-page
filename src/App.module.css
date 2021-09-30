@@ -1,6 +1,14 @@
 .section {
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 25px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+/* Ipad */
+@media (min-width: 768px) {
+  .section {
+    padding: 0 43px;
+    max-width: 768px;
+  }
 }
