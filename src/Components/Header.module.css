@@ -9,3 +9,13 @@
 .menuIcon {
   cursor: pointer;
 }
+
+@media (min-width: 414px) {
+  .header {
+    padding: 30px;
+  }
+  .brandLogo,
+  .menuIcon {
+    height: 22px;
+  }
+}

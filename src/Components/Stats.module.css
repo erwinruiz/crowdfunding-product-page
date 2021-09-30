@@ -39,3 +39,15 @@
   background-color: var(--Moderate-cyan);
   border-radius: 10px;
 }
+
+@media (min-width: 414px) {
+  .article {
+    padding: 30px 26px;
+  }
+  .article p {
+    font-size: 34px;
+  }
+  .article p span {
+    font-size: 16px;
+  }
+}
