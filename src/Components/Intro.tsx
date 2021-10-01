@@ -1,6 +1,33 @@
 import classes from "./Intro.module.css";
+import { useState } from "react";
 
 function Intro() {
+  const [isBookmarked, setIsBookmarked] = useState(false);
+
+  const bookmarkHandler = () => {
+    setIsBookmarked((state) => !state);
+  };
+
+  let bookmark;
+  if (isBookmarked) {
+    bookmark = (
+      <div
+        className={`${classes.bookmark} ${classes.bookmarkedContainer}`}
+        onClick={bookmarkHandler}
+      >
+        <img src="./images/icon-bookmarked.svg" alt="bookmark icon" />
+        <p className={classes.bookmarkedText}>Bookmarked</p>
+      </div>
+    );
+  } else {
+    bookmark = (
+      <div className={classes.bookmark} onClick={bookmarkHandler}>
+        <img src="./images/icon-bookmark.svg" alt="bookmark icon" />
+        <p>Bookmark</p>
+      </div>
+    );
+  }
+
   return (
     <article className={classes.article}>
       <img
@@ -15,10 +42,7 @@ function Intro() {
         </p>
         <div className={classes.actions}>
           <button>Back this project</button>
-          <div className={classes.bookmark}>
-            <img src="./images/icon-bookmark.svg" alt="bookmark icon" />
-            <p>Bookmark</p>
-          </div>
+          {bookmark}
         </div>
       </div>
     </article>

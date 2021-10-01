@@ -101,3 +101,12 @@
     font-weight: 800;
   }
 }
+
+/* State bookmark */
+.bookmarkedContainer {
+  width: 188px !important;
+  background-color: rgba(238, 240, 248, 0.5) !important;
+}
+.bookmarkedText {
+  color: var(--Dark-cyan) !important;
+}
