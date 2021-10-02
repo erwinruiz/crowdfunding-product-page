@@ -32,6 +32,9 @@
   font-size: 34px;
   font-weight: 700;
 }
+.article .unitsLeft .unitsModal {
+  font-size: 24px !important;
+}
 .article .unitsLeft p:last-of-type {
   color: #999;
   font-size: 18px;
@@ -54,6 +57,10 @@
 .article .productOutOfStockBtn {
   background-color: var(--Dark-gray);
   cursor: initial;
+}
+.article .header input {
+  height: 24px;
+  width: 24px;
 }
 
 /* Iphone XS Max */

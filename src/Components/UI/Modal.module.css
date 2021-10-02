@@ -1,0 +1,72 @@
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal {
+  position: absolute;
+  z-index: 5;
+  background-color: #fff;
+  margin: 30% 20px;
+  border-radius: 12px;
+  padding: 35px 20px;
+}
+.modal .modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.modal .modalHeader h2 {
+  font-size: 22px;
+}
+.modal .modalHeader img {
+  cursor: pointer;
+}
+.modal .modalTextContent {
+  color: #999;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.modal .products {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.modal .products article {
+  padding: 30px 23px;
+}
+.modal .products article:first-of-type {
+  background-color: #fff;
+  border: 1px #ddd solid;
+  border-radius: 12px;
+  padding: 30px 23px;
+}
+.modal .products article header {
+  display: flex;
+  column-gap: 15px;
+}
+.modal .products article:first-of-type input {
+  height: 24px;
+  width: 24px;
+}
+.modal .products article:first-of-type h3 {
+  margin-bottom: 30px;
+}
+.modal .products article:first-of-type p {
+  color: #999;
+  font-size: 15.1px;
+  line-height: 1.7;
+}
+.modal .products article h3 {
+  font-size: 16.72px;
+}
+.modal .products article h4 {
+  font-size: 16px;
+}

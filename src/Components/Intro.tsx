@@ -1,11 +1,17 @@
 import classes from "./Intro.module.css";
-import { useState } from "react";
+import { Fragment, useState } from "react";
+import Modal from "./UI/Modal";
 
 function Intro() {
   const [isBookmarked, setIsBookmarked] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const bookmarkHandler = () => {
     setIsBookmarked((state) => !state);
+  };
+
+  const modalHandler = () => {
+    setIsModalOpen((state) => !state);
   };
 
   let bookmark;
@@ -29,23 +35,27 @@ function Intro() {
   }
 
   return (
-    <article className={classes.article}>
-      <img
-        className={classes.logo}
-        src="./images/logo-mastercraft.svg"
-        alt="mastercraft logo"
-      />
-      <div className={classes.content}>
-        <h1>Mastercraft Bamboo Monitor Riser</h1>
-        <p>
-          A beautiful & handcrafted monitor stand to reduce neck and eye strain.
-        </p>
-        <div className={classes.actions}>
-          <button>Back this project</button>
-          {bookmark}
+    <Fragment>
+      <article className={classes.article}>
+        <img
+          className={classes.logo}
+          src="./images/logo-mastercraft.svg"
+          alt="mastercraft logo"
+        />
+        <div className={classes.content}>
+          <h1>Mastercraft Bamboo Monitor Riser</h1>
+          <p>
+            A beautiful & handcrafted monitor stand to reduce neck and eye
+            strain.
+          </p>
+          <div className={classes.actions}>
+            <button onClick={modalHandler}>Back this project</button>
+            {bookmark}
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
+      {isModalOpen && <Modal onCloseModal={modalHandler}/>}
+    </Fragment>
   );
 }
 

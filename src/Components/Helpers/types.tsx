@@ -4,4 +4,6 @@ export type product = {
   pledge: number;
   text: string;
   units: number;
+  isModal?: boolean;
 };
+
