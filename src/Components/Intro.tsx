@@ -54,7 +54,7 @@ function Intro() {
           </div>
         </div>
       </article>
-      {isModalOpen && <Modal onCloseModal={modalHandler}/>}
+      {isModalOpen && <Modal onCloseModal={modalHandler} />}
     </Fragment>
   );
 }
