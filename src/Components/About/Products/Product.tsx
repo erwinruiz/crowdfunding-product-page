@@ -1,5 +1,6 @@
 import classes from "./Product.module.css";
 import { product } from "../../Helpers/types";
+import RadioButton from "../../UI/RadioButton";
 
 function Product(props: product) {
   const articleClasses = `${classes.article} ${
@@ -9,7 +10,7 @@ function Product(props: product) {
   return (
     <article className={articleClasses}>
       <header className={classes.header}>
-        {props.isModal && <input type="radio" />}
+        {props.isModal && <RadioButton />}
         {props.isModal && (
           <div>
             <h3>{props.title}</h3>

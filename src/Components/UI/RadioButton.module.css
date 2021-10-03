@@ -1,0 +1,16 @@
+.buttonContainer {
+  height: 24px;
+  width: 24px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttonInside {
+  height: 14px;
+  width: 14px;
+  background-color: var(--Moderate-cyan);
+  border-radius: 50%;
+}

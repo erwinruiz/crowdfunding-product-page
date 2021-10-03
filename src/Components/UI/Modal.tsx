@@ -3,8 +3,9 @@ import ReactDOM from "react-dom";
 import classes from "./Modal.module.css";
 import { products } from "../../db";
 import Product from "../About/Products/Product";
+import RadioButton from "./RadioButton";
 
-export type Props = {
+type Props = {
   onCloseModal: () => void;
 };
 
@@ -33,7 +34,7 @@ function Modal(props: Props) {
         <div className={classes.products}>
           <article>
             <header>
-              <input type="radio" />
+              <RadioButton />
               <h3>Pledge with no reward</h3>
             </header>
             <p>
