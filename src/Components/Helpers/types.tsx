@@ -1,3 +1,5 @@
+import { MouseEventHandler } from "react";
+
 export type product = {
   id?: number;
   title: string;
@@ -5,5 +7,6 @@ export type product = {
   text: string;
   units: number;
   isModal?: boolean;
+  onSelectProduct?: (id: number) => void
+  isActive?: boolean;
 };
-

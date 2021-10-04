@@ -4,12 +4,19 @@ import classes from "./Modal.module.css";
 import { products } from "../../db";
 import Product from "../About/Products/Product";
 import RadioButton from "./RadioButton";
+import { useState } from "react";
 
 type Props = {
   onCloseModal: () => void;
 };
 
 function Modal(props: Props) {
+  const [isActive, setIsActive] = useState(0);
+
+  const selectProductHandler = (id: number) => {
+    setIsActive(id);
+  };
+
   const Backdrop = () => {
     return (
       <div className={classes.backdrop} onClick={props.onCloseModal}></div>
@@ -32,9 +39,12 @@ function Modal(props: Props) {
           the world?
         </p>
         <div className={classes.products}>
-          <article>
+          <article
+            onClick={() => selectProductHandler(4)}
+            className={`${isActive === 4 ? classes.selectedProduct : ""}`}
+          >
             <header>
-              <RadioButton />
+              <RadioButton isActive={isActive === 4 ? true : false} />
               <h3>Pledge with no reward</h3>
             </header>
             <p>
@@ -46,11 +56,14 @@ function Modal(props: Props) {
           {products.map((product) => (
             <Product
               key={product.id}
+              id={product.id}
               title={product.title}
               pledge={product.pledge}
               text={product.text}
               units={product.units}
               isModal={true}
+              onSelectProduct={selectProductHandler}
+              isActive={isActive === product.id ? true : false}
             />
           ))}
         </div>

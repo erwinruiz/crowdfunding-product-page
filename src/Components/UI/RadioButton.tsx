@@ -1,19 +1,13 @@
 import classes from "./RadioButton.module.css";
-import { useState } from "react";
 
-// type Props = {
-//   onClick: () => void;
-// };
+type Props = {
+  isActive?: boolean;
+};
 
-function RadioButton() {
-  const [isActive, setIsActive] = useState(false);
-
-  const buttonHandler = () => {
-    setIsActive((state) => !state);
-  };
-
+function RadioButton(props: Props) {
+  const { isActive } = props;
   return (
-    <div className={classes.buttonContainer} onClick={buttonHandler}>
+    <div className={classes.buttonContainer}>
       <div className={`${isActive ? classes.buttonInside : ""}`}></div>
     </div>
   );
