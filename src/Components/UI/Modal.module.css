@@ -12,69 +12,69 @@
   position: absolute;
   z-index: 5;
   background-color: #fff;
-  margin: 30% 20px;
-  border-radius: 12px;
-  padding: 35px 20px;
+  margin: 30% 2rem;
+  border-radius: 1.2rem;
+  padding: 3.5rem 2rem;
 }
 .modal .modalHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
 }
 .modal .modalHeader h2 {
-  font-size: 22px;
+  font-size: 2.2rem;
 }
 .modal .modalHeader img {
   cursor: pointer;
 }
 .modal .modalTextContent {
   color: #999;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 1.7;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 .modal .products {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 2rem;
 }
 .modal .products article {
-  padding: 30px 23px;
+  padding: 3rem 2.3rem;
 }
 .modal .products article:not(:last-child) {
   cursor: pointer;
 }
 .modal .products article:first-of-type {
   background-color: #fff;
-  border: 1px #ddd solid;
-  border-radius: 12px;
-  padding: 30px 23px;
+  border: 0.1rem #ddd solid;
+  border-radius: 1.2rem;
+  padding: 3rem 2.3rem;
 }
 .modal .products article header {
   display: flex;
-  column-gap: 15px;
+  column-gap: 1.5rem;
 }
 .modal .products article:first-of-type input {
-  height: 24px;
-  width: 24px;
+  height: 2.4rem;
+  width: 2.4rem;
 }
 .modal .products article:first-of-type h3 {
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 .modal .products article:first-of-type p {
   color: #999;
-  font-size: 15.1px;
+  font-size: 1.51rem;
   line-height: 1.7;
 }
 .modal .products article h3 {
-  font-size: 16.72px;
+  font-size: 1.672rem;
 }
 .modal .products article h4 {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 /* State */
 .selectedProduct {
-  border: 2px solid var(--Moderate-cyan) !important;
-  padding: 30px 22px !important;
+  border: 0.2rem solid var(--Moderate-cyan) !important;
+  padding: 3rem 2.2rem !important;
 }

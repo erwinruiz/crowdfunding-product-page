@@ -1,70 +1,70 @@
 .article {
   background-color: #fff;
-  border: 1px #eee solid;
-  border-radius: 12px;
+  border: 0.1rem #eee solid;
+  border-radius: 1.2rem;
   text-align: center;
-  padding: 30px 20px;
+  padding: 3rem 2rem;
 }
 .article p {
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 .article p:last-of-type {
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 .article p span {
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 400;
   color: #999;
   display: block;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 .article .separatorLine {
-  border-bottom: 1px solid #ddd;
-  width: 80px;
+  border-bottom: 0.1rem solid #ddd;
+  width: 8rem;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
 }
 .article .progressBar {
-  height: 12px;
+  height: 1.2rem;
   background-color: rgba(238, 238, 238, 0.7);
   margin: 0 auto;
-  border-radius: 10px;
-  margin-bottom: 5px;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
 }
 .article .progressBar .actualProgress {
   height: 100%;
   width: 80%;
   background-color: var(--Moderate-cyan);
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 /* Iphone XS Max */
 @media (min-width: 414px) {
   .article {
-    padding: 30px 26px;
+    padding: 3rem 2.6rem;
   }
   .article p {
-    font-size: 34px;
+    font-size: 3.4rem;
   }
   .article p span {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 }
 
 /* Ipad */
 @media (min-width: 768px) {
   .article {
-    padding: 40px 35px;
+    padding: 4rem 3.5rem;
   }
   .stats {
     display: flex;
-    column-gap: 50px;
+    column-gap: 5rem;
   }
   .article .separatorLine {
-    border-right: 1px solid #ddd;
-    height: 50px;
+    border-right: 0.1rem solid #ddd;
+    height: 5rem;
     width: 0;
     margin: 0;
   }

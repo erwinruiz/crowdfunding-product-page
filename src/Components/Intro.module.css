@@ -1,49 +1,49 @@
 .article {
   background-color: #fff;
-  border: 1px #eee solid;
-  border-radius: 12px;
+  border: 0.1rem #eee solid;
+  border-radius: 1.2rem;
   text-align: center;
 }
 .article .logo {
-  height: 59px;
-  margin-top: -28px;
+  height: 5.9rem;
+  margin-top: -2.8rem;
 }
 .content {
-  padding: 20px 20px 45px;
+  padding: 2rem 2rem 4.5rem;
 }
 .content h1 {
   color: var(--Black);
-  font-size: 22px;
-  margin-bottom: 20px;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
 }
 .content p {
   color: #999;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 1.7;
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
 }
 .content .actions {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 0.8rem;
 }
 .content .actions button {
   background-color: var(--Moderate-cyan);
   font-family: "Commissioner";
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
   color: #fff;
-  padding: 20px 48px;
+  padding: 2rem 4.8rem;
   border: none;
-  border-radius: 35px;
+  border-radius: 3.5rem;
   cursor: pointer;
 }
 .content .actions button:hover {
   background-color: var(--Dark-cyan);
 }
 .content .actions .bookmark {
-  height: 59px;
+  height: 5.9rem;
   cursor: pointer;
 }
 .content .actions .bookmark img {
@@ -59,38 +59,38 @@
 /* Iphone XS Max */
 @media (min-width: 414px) {
   .content {
-    padding: 20px 25px 45px;
+    padding: 2rem 2.5rem 4.5rem;
   }
   .content h1 {
-    font-size: 26px;
+    font-size: 2.6rem;
   }
   .content p {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 }
 
 /* Ipad */
 @media (min-width: 768px) {
   .content {
-    padding: 20px 35px 45px;
+    padding: 2rem 3.5rem 4.5rem;
   }
   .content h1 {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
   .content p {
-    margin-bottom: 35px;
+    margin-bottom: 3.5rem;
   }
   .content .actions {
     justify-content: space-between;
-    gap: 8px;
+    gap: 0.8rem;
   }
   .content .actions .bookmark {
-    width: 170px;
+    width: 17rem;
     background-color: #eee;
-    border-radius: 30px;
+    border-radius: 3rem;
     display: flex;
     align-items: center;
-    column-gap: 11px;
+    column-gap: 1.1rem;
   }
   .content .actions .bookmark img {
     float: left;
@@ -103,7 +103,7 @@
 
   /* State bookmark */
   .bookmarkedContainer {
-    width: 188px !important;
+    width: 18.8rem !important;
     background-color: rgba(238, 240, 248, 0.5) !important;
   }
   .bookmarkedText {
