@@ -12,9 +12,14 @@ type Props = {
 
 function Modal(props: Props) {
   const [isActive, setIsActive] = useState(0);
+  const [acceptPledge, setAcceptPledge] = useState(false);
 
   const selectProductHandler = (id: number) => {
     setIsActive(id);
+  };
+
+  const enterPledgeHandler = () => {
+    setAcceptPledge(true);
   };
 
   const Backdrop = () => {
@@ -61,7 +66,7 @@ function Modal(props: Props) {
                     <i className="fas fa-dollar-sign"></i>
                     <input type="number" />
                   </div>
-                  <button>Continue</button>
+                  <button onClick={enterPledgeHandler}>Continue</button>
                 </div>
               </div>
             )}
@@ -77,9 +82,25 @@ function Modal(props: Props) {
               isModal={true}
               onSelectProduct={selectProductHandler}
               isActive={isActive === product.id ? true : false}
+              onEnterPledge={enterPledgeHandler}
             />
           ))}
         </div>
+      </article>
+    );
+  };
+
+  const ThankYouMessage = () => {
+    return (
+      <article className={`${classes.modal} ${classes.thankYouMessage}`}>
+        <img src="./images/icon-check.svg" alt="check icon" />
+        <h2>Thanks for your support!</h2>
+        <p className={classes.modalTextContent}>
+          Your pledge brings us one step closer to sharing Mastercraft Bamboo
+          Monitor Riser worldwide. You will get an email once our campaign is
+          completed.
+        </p>
+        <button onClick={props.onCloseModal}>Got it!</button>
       </article>
     );
   };
@@ -90,10 +111,16 @@ function Modal(props: Props) {
         <Backdrop />,
         document.getElementById("backdrop-root")!
       )}
-      {ReactDOM.createPortal(
-        <Modal />,
-        document.getElementById("overlay-root")!
-      )}
+      {!acceptPledge &&
+        ReactDOM.createPortal(
+          <Modal />,
+          document.getElementById("overlay-root")!
+        )}
+      {acceptPledge &&
+        ReactDOM.createPortal(
+          <ThankYouMessage />,
+          document.getElementById("overlay-root")!
+        )}
     </Fragment>
   );
 }

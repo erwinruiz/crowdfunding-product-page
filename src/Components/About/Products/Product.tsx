@@ -9,6 +9,10 @@ function Product(props: product) {
     }
   };
 
+  const enterPledgeHandler = () => {
+    props.onEnterPledge!();
+  };
+
   const articleClasses = `${classes.article} ${
     props.units > 0 ? "" : classes.productOutOfStock
   } ${props.isActive ? classes.selectedProduct : ""}`;
@@ -54,7 +58,7 @@ function Product(props: product) {
                 min={props.pledge}
               />
             </div>
-            <button>Continue</button>
+            <button onClick={enterPledgeHandler}>Continue</button>
           </div>
         </div>
       )}
