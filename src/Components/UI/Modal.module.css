@@ -77,4 +77,55 @@
 .selectedProduct {
   border: 0.2rem solid var(--Moderate-cyan) !important;
   padding: 3rem 2.2rem !important;
+  cursor: initial !important;
+}
+.selectedProduct p {
+  margin-bottom: 2rem;
+}
+.hr {
+  border-top: 0.1rem solid #ddd;
+  width: calc(100% + 4.6rem);
+  margin: 0 0 2.5rem -2.3rem;
+}
+.enterYourPledge p {
+  text-align: center;
+}
+.enterYourPledge .actions {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}
+.enterYourPledge i {
+  color: #999;
+  margin-right: 0.5rem;
+}
+.enterYourPledge .inputContainer {
+  padding: 1rem 2rem 1rem 2.5rem;
+  border: 0.1rem solid #ddd;
+  border-radius: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.enterYourPledge input {
+  border: none;
+  width: 3.5rem !important;
+  width: 5rem;
+  outline: none;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.enterYourPledge button {
+  background-color: var(--Moderate-cyan);
+  font-family: "Commissioner";
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 2rem 3rem;
+  border: none;
+  border-radius: 3.5rem;
+  cursor: pointer;
+}
+.enterYourPledge button:hover {
+  background-color: var(--Dark-cyan);
 }

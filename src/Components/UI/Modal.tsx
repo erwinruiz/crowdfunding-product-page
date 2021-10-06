@@ -52,6 +52,19 @@ function Modal(props: Props) {
               project. As a backer, you will be signed up to receive product
               updates via email.
             </p>
+            {isActive === 4 && <div className={classes.hr} />}
+            {isActive === 4 && (
+              <div className={classes.enterYourPledge}>
+                <p>Enter your pledge</p>
+                <div className={classes.actions}>
+                  <div className={classes.inputContainer}>
+                    <i className="fas fa-dollar-sign"></i>
+                    <input type="number" />
+                  </div>
+                  <button>Continue</button>
+                </div>
+              </div>
+            )}
           </article>
           {products.map((product) => (
             <Product

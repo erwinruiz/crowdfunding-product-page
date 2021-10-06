@@ -4,7 +4,7 @@ import RadioButton from "../../UI/RadioButton";
 
 function Product(props: product) {
   const selectProductHandler = () => {
-    if (props.units > 0) {
+    if (props.units > 0 && props.isModal) {
       props.onSelectProduct!(props.id!);
     }
   };
@@ -41,6 +41,23 @@ function Product(props: product) {
           </button>
         )}
       </div>
+      {props.isActive && <div className={classes.hr} />}
+      {props.isActive && (
+        <div className={classes.enterYourPledge}>
+          <p>Enter your pledge</p>
+          <div className={classes.actions}>
+            <div className={classes.inputContainer}>
+              <i className="fas fa-dollar-sign"></i>
+              <input
+                type="number"
+                defaultValue={props.pledge}
+                min={props.pledge}
+              />
+            </div>
+            <button>Continue</button>
+          </div>
+        </div>
+      )}
     </article>
   );
 }
