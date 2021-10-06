@@ -52,7 +52,7 @@ function Modal(props: Props) {
               <RadioButton isActive={isActive === 4 ? true : false} />
               <h3>Pledge with no reward</h3>
             </header>
-            <p>
+            <p className={classes.productText}>
               Choose to support us without a reward if you simply believe in our
               project. As a backer, you will be signed up to receive product
               updates via email.

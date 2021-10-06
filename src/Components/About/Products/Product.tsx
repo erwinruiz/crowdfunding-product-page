@@ -15,7 +15,9 @@ function Product(props: product) {
 
   const articleClasses = `${classes.article} ${
     props.units > 0 ? "" : classes.productOutOfStock
-  } ${props.isActive ? classes.selectedProduct : ""}`;
+  } ${props.isActive ? classes.selectedProduct : ""} ${
+    props.isModal ? classes.articleModal : ""
+  }`;
 
   return (
     <article className={articleClasses} onClick={selectProductHandler}>
@@ -30,7 +32,7 @@ function Product(props: product) {
         {!props.isModal && <h3>{props.title}</h3>}
         {!props.isModal && <h4>Pledge ${props.pledge} or more</h4>}
       </header>
-      <p>{props.text}</p>
+      <p className={classes.productText}>{props.text}</p>
       <div className={classes.footer}>
         <div className={classes.unitsLeft}>
           {!props.isModal && <p>{props.units}</p>}
@@ -45,6 +47,7 @@ function Product(props: product) {
           </button>
         )}
       </div>
+      <p className={classes.productTextIpadOrMore}>{props.text}</p>
       {props.isActive && <div className={classes.hr} />}
       {props.isActive && (
         <div className={classes.enterYourPledge}>
