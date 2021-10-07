@@ -12,6 +12,11 @@
 .navMenu {
   display: none;
 }
+/* Mobile Menu Active */
+.mobileMenuActive {
+  z-index: 10;
+  position: relative;
+}
 
 /* Iphone XS Max */
 @media (min-width: 414px) {
