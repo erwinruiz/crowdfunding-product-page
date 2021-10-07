@@ -184,3 +184,23 @@
     margin: 38% 0 0 calc(50% - 25.5rem);
   }
 }
+@media (min-width: 1100px) {
+  .thankYouMessage {
+    margin: 36% 0 0 calc(50% - 25.5rem);
+  }
+}
+@media (min-width: 1200px) {
+  .thankYouMessage {
+    margin: 31.5% 0 0 calc(50% - 25.5rem);
+  }
+}
+@media (min-width: 1300px) {
+  .thankYouMessage {
+    margin: 30% 0 0 calc(50% - 25.5rem);
+  }
+}
+@media (min-width: 1440px) {
+  .thankYouMessage {
+    margin: 31.5% 0 0 calc(50% - 25.5rem);
+  }
+}
