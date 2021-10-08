@@ -85,12 +85,12 @@
     gap: 0.8rem;
   }
   .content .actions .bookmark {
-    width: 17rem;
+    width: 19rem;
     background-color: #eee;
     border-radius: 3rem;
     display: flex;
     align-items: center;
-    column-gap: 1.1rem;
+    column-gap: 1.5rem;
   }
   .content .actions .bookmark img {
     float: left;
@@ -103,7 +103,7 @@
 
   /* State bookmark */
   .bookmarkedContainer {
-    width: 18.8rem !important;
+    width: 19.8rem !important;
     background-color: rgba(238, 240, 248, 0.5) !important;
   }
   .bookmarkedText {
