@@ -7,6 +7,11 @@ function Stats() {
 
   const totalMoney = ctx.totalMoney.toLocaleString();
   const totalBackers = ctx.totalBackers.toLocaleString();
+  let currentProgressBar = (ctx.totalMoney * 100) / 100000;
+
+  if (currentProgressBar > 100) {
+    currentProgressBar = 100;
+  }
 
   return (
     <article className={classes.article}>
@@ -24,7 +29,10 @@ function Stats() {
         </p>
       </div>
       <div className={classes.progressBar}>
-        <div className={classes.actualProgress} />
+        <div
+          className={classes.actualProgress}
+          style={{ width: `${currentProgressBar}%` }}
+        />
       </div>
     </article>
   );
