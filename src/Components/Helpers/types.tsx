@@ -8,5 +8,5 @@ export type product = {
   isModal?: boolean;
   onSelectProduct?: (id: number) => void;
   isActive?: boolean;
-  onEnterPledge?: () => void;
+  onEnterPledge?: (pledge?: number) => void;
 };

@@ -4,7 +4,8 @@ import classes from "./Modal.module.css";
 import { products } from "../../db";
 import Product from "../About/Products/Product";
 import RadioButton from "./RadioButton";
-import { useState } from "react";
+import { useState, useRef, useContext } from "react";
+import { Context } from "../../store/context";
 
 type Props = {
   onCloseModal: () => void;
@@ -13,13 +14,20 @@ type Props = {
 function Modal(props: Props) {
   const [isActive, setIsActive] = useState(0);
   const [acceptPledge, setAcceptPledge] = useState(false);
+  const enteredPledgeRef = useRef<HTMLInputElement>(null);
+  const ctx = useContext(Context);
 
   const selectProductHandler = (id: number) => {
     setIsActive(id);
   };
 
-  const enterPledgeHandler = () => {
+  const enterPledgeHandler = (pledge?: number) => {
     setAcceptPledge(true);
+    if (!pledge) {
+      ctx.incrementTotal(Number(enteredPledgeRef.current!.value));
+      return;
+    }
+    ctx.incrementTotal(pledge);
   };
 
   const Backdrop = () => {
@@ -64,9 +72,9 @@ function Modal(props: Props) {
                 <div className={classes.actions}>
                   <div className={classes.inputContainer}>
                     <i className="fas fa-dollar-sign"></i>
-                    <input type="number" />
+                    <input type="number" ref={enteredPledgeRef} />
                   </div>
-                  <button onClick={enterPledgeHandler}>Continue</button>
+                  <button onClick={() => enterPledgeHandler()}>Continue</button>
                 </div>
               </div>
             )}

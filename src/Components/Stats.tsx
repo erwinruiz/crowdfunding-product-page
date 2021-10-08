@@ -1,15 +1,22 @@
 import classes from "./Stats.module.css";
+import { useContext } from "react";
+import { Context } from "../store/context";
 
 function Stats() {
+  const ctx = useContext(Context);
+
+  const totalMoney = ctx.totalMoney.toLocaleString();
+  const totalBackers = ctx.totalBackers.toLocaleString();
+
   return (
     <article className={classes.article}>
       <div className={classes.stats}>
         <p>
-          $89,914 <span>of $100,000 backed</span>
+          ${totalMoney} <span>of $100,000 backed</span>
         </p>
         <div className={classes.separatorLine} />
         <p>
-          5,007 <span>total backers</span>
+          {totalBackers} <span>total backers</span>
         </p>
         <div className={classes.separatorLine} />
         <p>

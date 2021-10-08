@@ -1,8 +1,11 @@
 import classes from "./Product.module.css";
 import { product } from "../../Helpers/types";
 import RadioButton from "../../UI/RadioButton";
+import { useRef } from "react";
 
 function Product(props: product) {
+  const enteredPledgeRef = useRef<HTMLInputElement>(null);
+
   const selectProductHandler = () => {
     if (props.units > 0 && props.isModal) {
       props.onSelectProduct!(props.id!);
@@ -10,7 +13,7 @@ function Product(props: product) {
   };
 
   const enterPledgeHandler = () => {
-    props.onEnterPledge!();
+    props.onEnterPledge!(Number(enteredPledgeRef.current!.value));
   };
 
   const articleClasses = `${classes.article} ${
@@ -59,6 +62,7 @@ function Product(props: product) {
                 type="number"
                 defaultValue={props.pledge}
                 min={props.pledge}
+                ref={enteredPledgeRef}
               />
             </div>
             <button onClick={enterPledgeHandler}>Continue</button>
