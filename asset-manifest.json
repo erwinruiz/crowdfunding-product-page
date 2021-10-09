@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/crowdfunding-product-page/static/css/main.9bf2db1c.chunk.css",
+    "main.js": "/crowdfunding-product-page/static/js/main.bef29b8a.chunk.js",
+    "main.js.map": "/crowdfunding-product-page/static/js/main.bef29b8a.chunk.js.map",
+    "runtime-main.js": "/crowdfunding-product-page/static/js/runtime-main.01678939.js",
+    "runtime-main.js.map": "/crowdfunding-product-page/static/js/runtime-main.01678939.js.map",
+    "static/js/2.20b84848.chunk.js": "/crowdfunding-product-page/static/js/2.20b84848.chunk.js",
+    "static/js/2.20b84848.chunk.js.map": "/crowdfunding-product-page/static/js/2.20b84848.chunk.js.map",
+    "static/js/3.518bb150.chunk.js": "/crowdfunding-product-page/static/js/3.518bb150.chunk.js",
+    "static/js/3.518bb150.chunk.js.map": "/crowdfunding-product-page/static/js/3.518bb150.chunk.js.map",
+    "index.html": "/crowdfunding-product-page/index.html",
+    "static/css/main.9bf2db1c.chunk.css.map": "/crowdfunding-product-page/static/css/main.9bf2db1c.chunk.css.map",
+    "static/js/2.20b84848.chunk.js.LICENSE.txt": "/crowdfunding-product-page/static/js/2.20b84848.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/crowdfunding-product-page/static/media/image-hero-mobile.d4f477d4.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01678939.js",
+    "static/js/2.20b84848.chunk.js",
+    "static/css/main.9bf2db1c.chunk.css",
+    "static/js/main.bef29b8a.chunk.js"
+  ]
+}
