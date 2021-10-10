@@ -35,7 +35,9 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- TypeScript
 - [React](https://reactjs.org/) - JS library
+- Context
 - CSS Modules
 
 ### Layout
